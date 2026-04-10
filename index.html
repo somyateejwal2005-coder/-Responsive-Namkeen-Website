@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crunchy Bites | Premium Namkeen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Crunchy<span>Bites</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="alert('Cart functionality coming soon!')">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/slider1.jpg') center/cover;">
+                <div class="hero-content">
+                    <h1>Authentic Indian Flavors</h1>
+                    <p>Handcrafted namkeen made with love and the finest spices.</p>
+                    <a href="#products" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/slider2.jpg') center/cover;">
+                <div class="hero-content">
+                    <h1>The Perfect Tea-Time Snack</h1>
+                    <p>From spicy Bhujia to crunchy Mixes, we have it all.</p>
+                    <a href="#products" class="btn">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Founded in 1995, Crunchy Bites started in a small kitchen with a single recipe for Aloo Bhujia. Today, we bring the traditional taste of India to your doorstep using 100% natural ingredients and age-old techniques.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products section">
+        <div class="container">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Aloo Bhujia">
+                    <h3>Classic Aloo Bhujia</h3>
+                    <p class="price">$4.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Moong Dal">
+                    <h3>Salty Moong Dal</h3>
+                    <p class="price">$3.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Khatta Meetha">
+                    <h3>Khatta Meetha Mix</h3>
+                    <p class="price">$5.25</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product4.jpg" alt="Cornflakes Mix">
+                    <h3>Cornflakes Mixture</h3>
+                    <p class="price">$4.75</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product5.jpg" alt="Masala Peanuts">
+                    <h3>Spicy Masala Peanuts</h3>
+                    <p class="price">$3.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product6.jpg" alt="Murukku">
+                    <h3>Butter Murukku</h3>
+                    <p class="price">$6.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="images/user1.jpg" alt="User">
+                    <h4>Anjali Sharma</h4>
+                    <p>"The Bhujia reminds me of my grandmother's cooking. So fresh!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/user2.jpg" alt="User">
+                    <h4>Rahul Verma</h4>
+                    <p>"Fast delivery and the packaging keeps everything crunchy."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/user3.jpg" alt="User">
+                    <h4>Sara Khan</h4>
+                    <p>"Best tea-time snacks in town. The Masala Peanuts are addictive!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/user4.jpg" alt="User">
+                    <h4>David Miller</h4>
+                    <p>"Love the variety. Khatta Meetha is my absolute favorite."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crunchy Bites Namkeen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
